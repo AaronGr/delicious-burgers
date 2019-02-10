@@ -4,6 +4,7 @@
     height: 250px;
     text-align: bold;
     font-size: 1.2rem;
+    align-content: center;
 }
 
 @media (min-width: 1000px) and (min-height: 700px) {
