@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 
 import './App.css';
 import Layout from './containers/Layout/Layout'
@@ -10,8 +11,8 @@ class App extends Component {
     return (
       <div>
         <Layout>
-          <BurgerBuilder />
-          <Checkout />
+          <Route path="/checkout" component={Checkout} />
+          <Route path="/" exact component={BurgerBuilder} />
         </Layout>
       </div>
     );
